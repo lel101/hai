@@ -2,7 +2,7 @@ FROM richarvey/nginx-php-fpm:3.1.6
 
 WORKDIR /var/www/html
 
-COPY app/ /var/www/html/
+COPY php/ /var/www/html/
 COPY docker/nginx.conf /etc/nginx/sites-available/default.conf
 COPY docker/entrypoint.sh /entrypoint.sh
 
